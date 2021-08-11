@@ -1,0 +1,135 @@
+body, html {
+    height: 100%;
+}
+
+body {
+    background: rgb(177, 247, 177);
+    font-family: sans-serif;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 5em;
+    text-shadow: 5px 5px #c9edff, 8px 8px rgba(0,0,0,0.19);
+    margin: 0;
+    -webkit-animation: slide-tr 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-tr 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+h3 {
+    font-size: 1.5em;
+
+}
+h3:before, h3:after {
+    content: " ";
+    position: absolute;
+    border-top: 5px solid rgba(0, 0, 0, .3)
+}
+h3:nth-of-type(1):before {
+    width: 3%;
+    height: 4px;
+    margin: 3% 0 0 -4%;
+}
+
+h3:nth-of-type(1):after {
+    width: 35%;
+    height: 4px;
+    margin: 3% 0 0 2%;
+}
+h3:nth-of-type(2) {
+    float: right;
+    margin-top: -5%;
+}
+
+h3:nth-of-type(2):before {
+    width: 150%;
+    height: 4px;
+    margin: 9% 0 0 -155%;
+}
+
+h3:nth-of-type(2):after {
+    width: 10%;
+    height: 4px;
+    margin: 6% 0 0 3%;
+}
+
+h1, h3 {
+    transform:matrix(1.00,-0.25,0.00,1.00,0,0);
+    -ms-transform:matrix(1.00,-0.25,0.00,1.00,0,0);
+    -webkit-transform:matrix(1.00,-0.25,0.00,1.00,0,0);
+    text-transform: uppercase;
+}
+
+#container::before {
+    content: "";
+    /*Chrome,Safari*/
+    -webkit-clip-path: polygon(192px 144px,192px 145px,199px 146px,199px 147px,198px 148px,198px 149px,197px 149px,194px 148px,190px 146px,187px 144px,186px 144px,187px 142px,185px 141px,185px 140px,184px 140px,182px 139px,179px 137px,164px 136px,163px 137px,162px 137px,161px 138px,160px 138px,159px 139px,155px 139px,153px 162px,152px 162px,152px 165px,151px 165px,150px 165px,150px 166px,149px 166px,149px 167px,147px 167px,147px 168px,145px 168px,145px 169px,143px 170px,141px 170px,141px 171px,140px 172px,139px 172px,139px 173px,138px 173px,138px 175px,137px 176px,137px 178px,136px 177px,136px 178px,135px 179px,134px 192px,135px 192px,135px 195px,135px 199px,135px 200px,136px 200px,136px 203px,137px 203px,137px 206px,137px 206px,137px 207px,138px 207px,138px 210px,139px 214px,139px 219px,140px 219px,140px 221px,142px 223px,141px 226px,143px 230px,143px 232px,144px 232px,144px 234px,145px 234px,145px 236px,146px 236px,146px 237px,147px 237px,147px 238px,148px 239px,147px 240px,148px 241px,148px 242px,149px 242px,149px 244px,150px 244px,150px 245px,151px 245px,152px 246px,152px 247px,153px 248px,153px 249px,154px 249px,154px 251px,155px 252px,155px 254px,155px 255px,155px 258px,156px 259px,156px 261px,157px 261px,157px 264px,158px 265px,158px 266px,158px 270px,158px 274px,159px 277px,160px 279px,159px 292px,158px 293px,157px 300px,156px 301px,156px 302px,155px 302px,155px 303px,154px 303px,154px 304px,153px 304px,153px 306px,152px 306px,151px 307px,151px 308px,149px 308px,149px 309px,148px 309px,148px 310px,146px 310px,145px 312px,144px 311px,144px 312px,140px 312px,140px 313px,139px 314px,138px 314px,138px 315px,137px 315px,137px 316px,135px 316px,135px 317px,134px 317px,134px 318px,133px 318px,132px 319px,131px 318px,131px 319px,130px 319px,130px 320px,129px 320px,129px 321px,128px 322px,127px 322px,127px 324px,125px 325px,125px 329px,124px 329px,124px 332px,123px 333px,121px 353px,122px 355px,122px 364px,122px 369px,121px 384px,122px 387px,122px 388px,178px 392px,180px 393px,182px 395px,185px 398px,187px 400px,191px 401px,197px 401px,197px 402px,200px 403px,200px 404px,201px 406px,199px 440px,199px 441px,199px 444px,200px 444px,200px 445px,201px 447px,202px 450px,204px 452px,206px 458px,207px 459px,208px 459px,208px 461px,209px 461px,209px 462px,210px 463px,210px 466px,213px 473px,214px 475px,214px 476px,216px 479px,217px 481px,219px 484px,220px 486px,221px 487px,222px 487px,222px 488px,225px 489px,227px 490px,229px 490px,231px 492px,232px 492px,233px 493px,235px 494px,237px 496px,240px 500px,243px 503px,245px 504px,245px 505px,246px 505px,247px 506px,248px 506px,248px 507px,249px 508px,251px 508px,252px 510px,252px 511px,293px 513px,293px 514px,301px 515px,303px 516px,308px 517px,309px 518px,311px 518px,312px 519px,319px 519px,320px 518px,327px 519px,327px 518px,329px 518px,330px 517px,331px 517px,331px 516px,332px 516px,333px 515px,335px 515px,336px 514px,337px 515px,337px 514px,339px 514px,339px 513px,342px 513px,342px 512px,343px 512px,343px 511px,344px 510px,346px 510px,347px 509px,347px 508px,348px 507px,350px 507px,350px 506px,351px 506px,353px 506px,353px 505px,354px 505px,354px 504px,356px 504px,356px 503px,359px 503px,360px 502px,363px 502px,364px 501px,367px 502px,367px 501px,371px 501px,372px 500px,374px 500px,374px 498px,375px 498px,375px 497px,376px 497px,376px 496px,377px 495px,378px 495px,378px 493px,379px 493px,379px 491px,381px 491px,382px 489px,383px 489px,383px 486px,384px 486px,384px 485px,385px 484px,385px 482px,386px 482px,386px 481px,387px 479px,387px 475px,388px 475px,389px 474px,390px 474px,390px 471px,391px 471px,391px 468px,392px 467px,393px 467px,393px 465px,394px 465px,395px 458px,396px 458px,396px 457px,398px 456px,398px 454px,399px 454px,399px 451px,400px 450px,400px 449px,401px 449px,402px 444px,403px 443px,404px 425px,405px 425px,406px 416px,407px 416px,407px 415px,408px 415px,408px 412px,409px 411px,409px 408px,410px 408px,411px 408px,412px 405px,413px 404px,413px 402px,414px 401px,415px 387px,416px 387px,416px 385px,417px 385px,418px 369px,419px 369px,419px 368px,421px 368px,421px 367px,432px 368px,432px 369px,433px 369px,433px 370px,434px 370px,434px 371px,435px 372px,435px 374px,437px 374px,437px 375px,439px 375px,439px 376px,440px 376px,441px 378px,442px 378px,441px 380px,442px 380px,442px 382px,443px 382px,443px 384px,444px 384px,444px 385px,446px 385px,446px 386px,447px 386px,447px 389px,448px 389px,448px 391px,449px 391px,449px 392px,454px 393px,455px 392px,461px 392px,461px 391px,464px 391px,465px 390px,466px 390px,466px 389px,470px 390px,470px 389px,472px 389px,473px 388px,475px 388px,475px 387px,477px 376px,477px 370px,478px 365px,479px 364px,480px 364px,480px 363px,481px 363px,481px 362px,482px 362px,482px 361px,484px 362px,484px 361px,486px 359px,486px 358px,487px 358px,487px 355px,488px 355px,488px 353px,489px 353px,491px 333px,492px 332px,492px 329px,493px 328px,493px 327px,494px 327px,494px 325px,495px 325px,495px 324px,496px 324px,497px 322px,498px 321px,499px 322px,499px 321px,500px 321px,500px 320px,504px 316px,504px 315px,505px 315px,506px 301px,507px 301px,508px 291px,509px 291px,510px 278px,511px 278px,511px 275px,513px 275px,514px 274px,515px 275px,515px 274px,516px 273px,516px 271px,518px 269px,518px 268px,521px 266px,522px 266px,522px 264px,523px 263px,524px 263px,524px 261px,525px 259px,525px 257px,526px 257px,526px 254px,528px 253px,529px 253px,529px 252px,531px 253px,531px 252px,532px 252px,532px 251px,533px 251px,533px 250px,536px 250px,537px 249px,538px 249px,540px 247px,541px 247px,541px 246px,543px 246px,544px 245px,545px 244px,546px 244px,546px 243px,547px 243px,547px 241px,549px 240px,549px 233px,550px 232px,551px 230px,551px 228px,552px 228px,554px 204px,553px 204px,553px 202px,552px 202px,552px 201px,549px 198px,549px 198px,548px 197px,547px 197px,546px 196px,545px 195px,542px 192px,541px 190px,539px 189px,539px 188px,538px 187px,537px 187px,536px 186px,536px 185px,535px 184px,536px 182px,535px 182px,535px 181px,534px 181px,534px 179px,533px 179px,533px 178px,531px 175px,531px 172px,530px 172px,532px 154px,530px 154px,530px 152px,529px 152px,528px 151px,528px 150px,526px 150px,526px 149px,525px 148px,524px 148px,524px 147px,521px 144px,521px 143px,518px 142px,515px 141px,509px 140px,492px 139px,488px 140px,486px 140px,486px 141px,485px 141px,484px 142px,484px 143px,483px 143px,482px 144px,481px 144px,480px 146px,477px 146px,477px 147px,474px 146px,472px 148px,471px 148px,469px 150px,467px 150px,467px 151px,461px 155px,460px 155px,460px 156px,459px 156px,459px 157px,457px 158px,456px 158px,456px 159px,455px 159px,454px 160px,452px 160px,451px 161px,428px 159px,426px 160px,418px 159px,417px 160px,407px 160px,406px 161px,393px 160px,391px 160px,382px 162px,372px 159px,371px 158px,370px 158px,369px 157px,366px 157px,364px 156px,363px 156px,362px 154px,361px 154px,361px 153px,360px 153px,359px 152px,358px 152px,356px 151px,344px 150px,342px 151px,341px 152px,340px 152px,338px 154px,337px 154px,337px 155px,335px 155px,334px 155px,332px 155px,331px 156px,311px 155px,310px 156px,310px 157px,308px 157px,307px 158px,305px 157px,305px 158px,304px 158px,304px 159px,302px 159px,301px 160px,299px 160px,297px 161px,290px 160px,290px 159px,284px 159px,282px 158px,253px 156px,251px 154px,249px 153px,248px 152px,247px 152px,246px 151px,246px 150px,244px 150px,242px 149px,242px 148px,240px 148px,237px 146px,236px 146px,235px 144px,234px 144px,232px 141px,230px 140px,210px 139px,208px 139px,205px 139px,205px 140px,204px 140px,204px 141px,196px 141px,195px 142px,193px 141px,193px 142px,192px 142px,191px 144px,191px 144px);
+     background: #17f258;
+    position: fixed;
+    height: 700px;
+    width: 700px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    
+        animation: scale-up-hor-center 1s cubic-bezier(0.390, 0.575, 0.565, 2.000) both;
+
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2018-9-30 16:33:51
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-up-hor-center
+ * ----------------------------------------
+ */
+ @keyframes scale-up-hor-center {
+    0% {
+      transform: scaleX(0.4) matrix(1.00,-0.25,0.00,1.00,0,0);
+    }
+    100% {
+      transform: scaleX(1) matrix(1.00,-0.25,0.00,1.00,0,0);
+    }
+  }
+
+  /* ----------------------------------------------
+ * Generated by Animista on 2018-9-30 16:39:1
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-tr
+ * ----------------------------------------
+ */
+@keyframes slide-tr {
+    0% {
+      transform: translateY(30px) translateX(-100px) matrix(1.00,-0.25,0.00,1.00,0,0);
+    }
+    100% {
+      transform: translateY(0) translateX(0) matrix(1.00,-0.25,0.00,1.00,0,0);
+    }
+  }
+
+  footer {
+    padding: 15px;
+    text-align: center;
+    position: absolute;
+    
+}
+footer a {
+  text-decoration: none;
+}
+footer p {
+    font-size: 1.5em;
+}
